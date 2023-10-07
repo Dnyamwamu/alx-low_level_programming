@@ -12,7 +12,8 @@
  */
 int main(void)
 {
-	const char *m = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	char *m = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+
 	write(STDERR_FILENO, m, 59);
 	return (1);
 }
