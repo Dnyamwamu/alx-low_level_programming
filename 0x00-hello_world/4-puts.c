@@ -1,2 +1,2 @@
-#!/bin/bash
-gcc -o my_program my_program.c && ./my_program; exit 0
+#include <stdio.h>
+int main() { puts("Programming is like building a multilingual puzzle\n"); return 0; }
