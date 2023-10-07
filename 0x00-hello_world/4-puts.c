@@ -5,7 +5,7 @@
  * Description: This function prints the message Programming is like
  * building a multilingual puzzle. followed by a new line and returns 0.
  *
- * Retur: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
