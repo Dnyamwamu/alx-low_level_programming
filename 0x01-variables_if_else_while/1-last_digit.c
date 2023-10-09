@@ -19,7 +19,7 @@ int main(void)
 
 	printf("Last digit of %d is ", n);
 
-	int lastDigit = abs(n) % 10;  /* Calculate the last digit (positive value) */
+	int lastDigit = abs(n) % 10;
 
 	printf("%d and is ", lastDigit);
 
