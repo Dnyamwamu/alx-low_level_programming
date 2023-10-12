@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - Entry point of tha app
+ * print_alphabet - A function
  *
  * Description: Writes a func that prints
  * the alphabet in lowercase followed by a new line
@@ -10,7 +10,6 @@
 void print_alphabet(void)
 {
 	char letter = 'a';
-	char newline = '\n';
 
 	while (letter <= 'z')
 	{
@@ -18,5 +17,5 @@ void print_alphabet(void)
 		letter++;
 	}
 
-	_putchar(newline);
+	_putchar('\n');
 }
