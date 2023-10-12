@@ -10,12 +10,13 @@
 void print_alphabet(void)
 {
 	char letter = 'a';
+	char newline = '\n';
 
 	while (letter <= 'z')
 	{
-		write(1, &letter, 1);
+		_putchar(letter);
 		letter++;
 	}
 
-	write(1, "\n", 1);
+	_putchar(newline);
 }
