@@ -8,7 +8,6 @@
 void print_alphabet_x10(void)
 {
 	char letter = 'a';
-	char newline = '\n';
 	int count = 0;
 	
 	while (count < 10)
@@ -20,8 +19,10 @@ void print_alphabet_x10(void)
 		}
 		
 		count++;
+		
+		if (count < 10)
+			_putchar('\n');
+		
 		letter = 'a';
 	}
-       
-	_putchar(newline);
 }
