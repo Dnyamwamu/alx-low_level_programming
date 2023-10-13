@@ -2,7 +2,7 @@
 /**
  * print_alphabet_x10 - A function definition
  *
- * Description: A program that prints 10 times 
+ * Description: A program that prints 10 times
  * the alphabets in lowercase
  */
 void print_alphabet_x10(void)
