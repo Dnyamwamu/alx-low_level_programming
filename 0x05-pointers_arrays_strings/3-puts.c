@@ -1,24 +1,15 @@
 /**
- *_strlen - Returns the length of a string
- * @s: A pointer to a string.
+ * _puts - Prints a string followed by a new line to stdout.
+ * @str: A pointer to a string.
  *
- * This function calculates and returns the length
- * of the input string.
- * The length is determined by counting the characters
- * in the string
- * until the null-terminating character '\0' is encountered.
- *
- * Return: The length of the string.
+ * This function prints the input string to the standard output followed by a new line.
  */
-int _strlen(char *s)
+void _puts(char *str)
 {
-	int length = 0;
-
-	while (*s != '\0')
+	while (*str != '\0')
 	{
-		length++;
-		s++;
+		putchar(*str);
+		str++;
 	}
-
-	return length;
+	putchar('\n');
 }
