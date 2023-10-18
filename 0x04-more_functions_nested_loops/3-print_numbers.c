@@ -1,8 +1,5 @@
-#include "_putchar.h"
+#include "main.h"
 
-/**
- * print_numbers - Prints 0 - 9
- */
 void print_numbers(void)
 {
 	char digit;
