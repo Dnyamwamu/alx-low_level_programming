@@ -1,3 +1,5 @@
+#include <stddef.h>
+
 /**
  * _strpbrk - Searches a string for any set of bytes
  * @s: The string to search
