@@ -10,7 +10,6 @@
 int main(void)
 {
 	char *s;
-	char *duplicate;
 
 	s = _strdup("ALX SE");
 	if (s == NULL)
@@ -20,13 +19,5 @@ int main(void)
 	}
 	printf("%s\n", s);
 	free(s);
-	duplicate = _strdup("Another string");
-	if (duplicate == NULL)
-	{
-		printf("failed to allocate memory for duplicate\n");
-		return (1);
-	}
-	printf("%s\n", duplicate);
-	free(duplicate);
 	return (0);
 }
