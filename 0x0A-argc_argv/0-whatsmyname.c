@@ -1,15 +1,4 @@
 #include <stdio.h>
-#include <unistd.h>
-
-/**
- * _putchar - writes a character to stdout
- * @c: The character to print
- * Return: On success 1, on error -1
- */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
 
 /**
  * main - Entry point
@@ -19,14 +8,7 @@ int _putchar(char c)
  */
 int main(int argc, char *argv[])
 {
-	int i;
-	char *name = argv[0];
 	(void)argc;
-
-	for (i = 0; name[i] != '\0'; i++)
-	{
-		_putchar(name[i]);
-	}
-	_putchar('\n');
+	printf("%s\n", argv[0]);
 	return (0);
 }
