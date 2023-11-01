@@ -1,11 +1,10 @@
+#include <stdio.h>
 #include <unistd.h>
-#include "main.h"
 
 /**
- * _putchar - Write a character to stdout
+ * _putchar - writes a character to stdout
  * @c: The character to print
- *
- * Return: 1 on success, -1 on error.
+ * Return: On success 1, on error -1
  */
 int _putchar(char c)
 {
@@ -13,27 +12,21 @@ int _putchar(char c)
 }
 
 /**
- * main - Entry point of the program
- * @argc: Number of command line arguments
- * @argv: Array of command line argument strings
- *
- * Return: Always 0
+ * main - Entry point
+ * @argc: The number of command-line arguments
+ * @argv: An array containing the command-line arguments
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
 	int i;
+	char *name = argv[0];
+	(void)argc;
 
-	if (argc > 0)
+	for (i = 0; name[i] != '\0'; i++)
 	{
-		for (i = 0; argv[0][i] != '\0'; i++)
-		{
-			_putchar(argv[0][i]);
-		}
-		_putchar('\n');
-		return (0);
+		_putchar(name[i]);
 	}
-	else
-	{
-		return (1);
-	}
+	_putchar('\n');
+	return (0);
 }
